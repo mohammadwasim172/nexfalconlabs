@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexFalcon Labs — Modern Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-container">
+     <div class="logo">
+  <a href="#home">
+    <img src="images/logo.png" alt="NexFv2 Logo" class="header-logo">
+  </a>
+</div>
+
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="neuronCanvas"></canvas>
+    <div class="hero-content">
+      <h1>Empowering Innovation with Technology</h1>
+      <p>We build intelligent digital experiences for modern businesses.</p>
+      <button class="btn primary" onclick="scrollToSection('services')">Get Started</button>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <!-- ===== ABOUT ===== -->
+<section id="about" class="about container">
+  <div class="about-box">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>At <strong>NexFalcon Labs</strong>, we blend creativity and technology to deliver innovative digital solutions. Our team of developers, designers, and strategists work together to help businesses grow through smart, scalable, and elegant digital products.</p>
+      
+      <div class="about-points">
+        <div class="point">
+          <h4>🌟 Our Mission</h4>
+          <p>To empower brands with modern web and app technologies that drive success and innovation.</p>
+        </div>
+        <div class="point">
+          <h4>🚀 Our Vision</h4>
+          <p>To be recognized globally as a leader in creative technology and intelligent digital transformation.</p>
+        </div>
+        <div class="point">
+          <h4>💼 Our Expertise</h4>
+          <p>Web & App Development, UI/UX Design, E-commerce, Automation, and IoT Solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="Team illustration">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services container">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Modern, fast, and scalable web applications tailored to your business.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>Zoho Development</h3>
+        <p>Custom Zoho solutions to automate, integrate, and optimize your workflow.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Web Design</h3>
+        <p>Clean, creative, and user-centered designs that enhance digital presence.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📱</div>
+        <h3>Mobile App Development</h3>
+        <p>iOS & Android apps crafted for performance and intuitive experience.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛒</div>
+        <h3>E-commerce Development</h3>
+        <p>Secure and feature-rich online stores that drive conversions.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🌐</div>
+        <h3>Internet of Things</h3>
+        <p>Smart IoT solutions that connect devices and unlock new possibilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== START PROJECT ===== -->
+  <section class="start-project">
+    <div class="container start-box">
+      <div class="start-text">
+        <h2>Would you like to start a project with us?</h2>
+        <p>If yes, then you’re at the right place. Expect top-tier technical excellence, true professionalism, and results that go beyond expectations.</p>
+      </div>
+      <div class="start-btn">
+        <button class="btn primary small" id="hireBtn">Hire Us</button>
+      </div>
+    </div>
+  </section>
+   <!-- ✅ Add this script right before closing body -->
+  <script>
+    document.getElementById("hireBtn").addEventListener("click", function() {
+      window.open("https://www.upwork.com/agencies/1980958151577953727/", "_blank");
+    });
+  </script>
+
+
+  <!-- ===== CLIENT REVIEWS ===== -->
+  <section id="reviews" class="reviews container">
+    <h2>Client Reviews</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <p>“NexFalcon Labs transformed our website completely. The new design is sleek and loads lightning fast!”</p>
+        <div class="stars">★★★★★</div>
+        <h4>- Sarah Williams</h4>
+      </div>
+      <div class="review-card">
+        <p>“Their team built our mobile app from scratch — flawless execution and amazing support.”</p>
+        <div class="stars">★★★★★</div>
+        <h4>- David Patel</h4>
+      </div>
+      <div class="review-card">
+        <p>“Top-tier professionalism and creative ideas. Definitely recommend NexFalcon Labs for any tech project.”</p>
+        <div class="stars">★★★★★</div>
+        <h4>- Emily Chen</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact container">
+  <h2>Contact Us</h2>
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="55bd1046-53f0-4344-b3e9-99b0424fa03a">
+
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    </div>
+
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</section>
+
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-content">
+    
+    <!-- Column 1: Logo / About -->
+    <div class="footer-about">
+  <img src="images/logo.png" alt="NexFv2 Logo" class="footer-logo">
+  <p>Crafting powerful digital experiences through innovation, design, and code excellence.</p>
+</div>
+
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-envelope"></i> info@nexfalconlabs.com</p>
+      <p><i class="fas fa-phone"></i> +91 9518488861</p>
+      <p><i class="fas fa-map-marker-alt"></i> Panchkula, India</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 NexFalcon Labs — All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
